@@ -49,7 +49,7 @@
               "artifact": {
                 "size": 2847,
                 "MD5": "6052ebb6acbba734c83fd3a09e67d31e",
-                "url": "URL_VERS_VERSION_JSON_FABRIC_1.21.1"
+                "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.1/0.15.0/profile/json"
               }
             }
           ]
