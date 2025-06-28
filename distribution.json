@@ -103,6 +103,20 @@
           }
         },
         {
+          "id": "net.minecraft:launchwrapper:1.12",
+          "name": "Minecraft LaunchWrapper 1.12",
+          "type": "Library",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 32400,
+            "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
+            "url": "https://libraries.minecraft.net/net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar"
+          }
+        },
+        {
           "id": "org.spongepowered:mixin:0.8.5",
           "name": "Mixin 0.8.5",
           "type": "Library",
