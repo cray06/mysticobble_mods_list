@@ -103,48 +103,6 @@
           }
         },
         {
-          "id": "net.minecraft:launchwrapper:1.12",
-          "name": "Minecraft LaunchWrapper 1.12",
-          "type": "Library",
-          "required": {
-            "value": true,
-            "def": true
-          },
-          "artifact": {
-            "size": 32400,
-            "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
-            "url": "https://libraries.minecraft.net/net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar"
-          }
-        },
-        {
-          "id": "org.spongepowered:mixin:0.8.5",
-          "name": "Mixin 0.8.5",
-          "type": "Library",
-          "required": {
-            "value": true,
-            "def": true
-          },
-          "artifact": {
-            "size": 1048576,
-            "MD5": "mixinmd5hash1234567890abcdef123456",
-            "url": "https://repo.spongepowered.org/maven/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar"
-          }
-        },
-        {
-          "id": "net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5",
-          "name": "Fabric Sponge Mixin 0.12.5",
-          "type": "Library",
-          "required": {
-            "value": true,
-            "def": true
-          },
-          "artifact": {
-            "size": 2097152,
-            "MD5": "spongemixinmd5hash1234567890abcdef",
-            "url": "https://maven.fabricmc.net/net/fabricmc/sponge-mixin/0.12.5+mixin.0.8.5/sponge-mixin-0.12.5+mixin.0.8.5.jar"
-          }
-        },
-        {
           "id": "net.fabricmc:fabric-loader:0.15.11",
           "name": "Fabric Loader 0.15.11",
           "type": "Fabric",
