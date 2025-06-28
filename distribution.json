@@ -26,18 +26,30 @@
           {
             "id": "net.fabricmc:fabric-loader:0.16.9",
             "name": "Fabric Loader",
-            "type": "Library",
+            "type": "Fabric",
             "classpath": true,
             "artifact": {
               "size": 1300000,
               "MD5": "placeholder_md5",
               "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.16.9/fabric-loader-0.16.9.jar"
-            }
+            },
+            "subModules": [
+              {
+                "id": "1.21.1-fabric-0.16.9",
+                "name": "Fabric (version.json)",
+                "type": "VersionManifest",
+                "artifact": {
+                  "size": 2847,
+                  "MD5": "placeholder_md5",
+                  "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.16.9/1.21.1-fabric-0.16.9.json"
+                }
+              }
+            ]
           },
           {
             "id": "fabric-api-0.116.3+1.21.1",
             "name": "Fabric API 0.116.3+1.21.1",
-            "type": "FabricMod",
+            "type": "Library",
             "classpath": true,
             "artifact": {
               "size": 2417666,
