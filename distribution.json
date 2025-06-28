@@ -1,5 +1,6 @@
 {
   "version": "1.0.0",
+
   "discord": {
     "clientId": "12334567890123456789",
     "smallImageText": "Test Launcher",
@@ -8,17 +9,17 @@
   "rss": "https://example.com/feed.rss",
   "servers": [
     {
-      "id": "Test_Server",
-      "name": "Test Launcher Demo",
-      "description": "Serveur de démonstration pour Test Launcher. Connectez-vous pour tester !",
-      "icon": "https://example.com/icon.png",
+      "id": "Fabric_Server",
+      "name": "Serveur Fabric 1.21.1",
+      "description": "Serveur Minecraft Fabric 1.21.1. Connectez-vous pour jouer !",
+      "icon": "https://famous-florentine-7204eb.netlify.app/assets/server-icon.png",
       "version": "1.0.0",
       "address": "localhost:25565",
-      "minecraftVersion": "1.19.4",
+      "minecraftVersion": "1.21.1",
       "discord": {
-        "shortId": "Test",
-        "largeImageText": "Test Launcher Demo Server",
-        "largeImageKey": "server-test"
+        "shortId": "Fabric",
+        "largeImageText": "Serveur Fabric 1.21.1",
+        "largeImageKey": "server-fabric"
       },
       "mainServer": true,
       "autoconnect": false,
@@ -32,61 +33,27 @@
       },
       "modules": [
         {
-          "id": "net.minecraftforge:forge:1.19.4-45.0.9",
-          "name": "Minecraft Forge 1.19.4-45.0.9",
-          "type": "ForgeHosted",
+          "id": "net.fabricmc:fabric-loader:0.15.0",
+          "name": "Fabric Loader 0.15.0",
+          "type": "FabricHosted",
           "artifact": {
-            "size": 2654813,
-            "MD5": "75086169e9f5f6990cd399ae352590da",
-            "url": "https://maven.minecraftforge.net/net/minecraftforge/forge/1.19.4-45.0.9/forge-1.19.4-45.0.9-universal.jar"
-          },
-          "subModules": [
-            {
-              "id": "net.minecraft:launchwrapper:1.12",
-              "name": "Mojang (LaunchWrapper)",
-              "type": "Library",
-              "artifact": {
-                "size": 32999,
-                "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
-                "url": "https://libraries.minecraft.net/net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar"
-              }
-            }
-          ]
+            "size": 1024000,
+            "MD5": "fabricloadermd5hash1234567890abcdef",
+            "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.15.0/fabric-loader-0.15.0.jar"
+          }
         },
         {
-          "id": "com.example:testmod:1.0.0",
-          "name": "Test Mod 1.0.0",
-          "type": "ForgeMod",
+          "id": "net.fabricmc:fabric-api:0.116.3+1.21.1",
+          "name": "Fabric API 0.116.3+1.21.1",
+          "type": "FabricMod",
           "required": {
-            "value": false,
+            "value": true,
             "def": true
           },
           "artifact": {
-            "size": 1024000,
-            "MD5": "examplemd5hash1234567890abcdef",
-            "url": "https://example.com/mods/testmod-1.0.0.jar"
-          }
-        },
-        {
-          "id": "test-config",
-          "name": "Configuration de test",
-          "type": "File",
-          "artifact": {
-            "size": 1024,
-            "MD5": "configmd5hash1234567890abcdef",
-            "path": "config/test.cfg",
-            "url": "https://example.com/config/test.cfg"
-          }
-        },
-        {
-          "id": "test-resourcepack",
-          "name": "Pack de ressources de test",
-          "type": "File",
-          "artifact": {
-            "size": 5120000,
-            "MD5": "resourcemd5hash1234567890abcdef",
-            "path": "resourcepacks/test-pack.zip",
-            "url": "https://example.com/resourcepacks/test-pack.zip"
+            "size": 2048000,
+            "MD5": "fabricapimd5hash1234567890abcdef",
+            "url": "https://famous-florentine-7204eb.netlify.app/mods/fabric-api-0.116.3%2B1.21.1.jar"
           }
         }
       ]
