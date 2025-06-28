@@ -113,12 +113,12 @@
           "artifact": {
             "size": 1048576,
             "MD5": "mixinmd5hash1234567890abcdef123456",
-            "url": "https://repo1.maven.org/maven2/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar"
+            "url": "https://repo.spongepowered.org/maven/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar"
           }
         },
         {
-          "id": "net.fabricmc:sponge-mixin:0.11.4+mixin.0.8.5",
-          "name": "Fabric Sponge Mixin 0.11.4",
+          "id": "net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5",
+          "name": "Fabric Sponge Mixin 0.12.5",
           "type": "Library",
           "required": {
             "value": true,
@@ -127,7 +127,7 @@
           "artifact": {
             "size": 2097152,
             "MD5": "spongemixinmd5hash1234567890abcdef",
-            "url": "https://maven.fabricmc.net/net/fabricmc/sponge-mixin/0.11.4+mixin.0.8.5/sponge-mixin-0.11.4+mixin.0.8.5.jar"
+            "url": "https://maven.fabricmc.net/net/fabricmc/sponge-mixin/0.12.5+mixin.0.8.5/sponge-mixin-0.12.5+mixin.0.8.5.jar"
           }
         },
         {
