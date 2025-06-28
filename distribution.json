@@ -1,232 +1,40 @@
 {
   "version": "1.0.0",
-  "discord": {
-    "clientId": "1234567890123456789",
-    "smallImageText": "Custom Fabric Server",
-    "smallImageKey": "fabric-logo"
-  },
-  "rss": "https://fabricmc.net/news.rss",
   "servers": [
     {
-      "id": "fabric_server_1211",
-      "name": "Mon Serveur Fabric 1.21.1",
-      "description": "Serveur Minecraft Fabric 1.21.1 personnalisé avec mods optimisés pour une expérience de jeu améliorée.",
-      "icon": "https://fabricmc.net/assets/logo.png",
+      "id": "mysticobble-fabric-1.21.1",
+      "name": "MysticObble Server (Minecraft 1.21.1)",
+      "description": "Serveur MysticObble Minecraft 1.21.1 avec Fabric",
+      "icon": "https://famous-florentine-7204eb.netlify.app/assets/server-icon.png",
       "version": "1.0.0",
       "address": "localhost:25565",
       "minecraftVersion": "1.21.1",
-      "discord": {
-        "shortId": "Fabric",
-        "largeImageText": "Serveur Fabric 1.21.1",
-        "largeImageKey": "fabric-server"
-      },
       "mainServer": true,
       "autoconnect": true,
-      "javaOptions": {
-        "supported": ">=21",
-        "suggestedMajor": 21,
-        "platformOptions": [
-          {
-            "platform": "win32",
-            "architecture": "x64",
-            "distribution": "MICROSOFT"
-          },
-          {
-            "platform": "darwin",
-            "architecture": "arm64",
-            "distribution": "CORRETTO"
-          }
-        ],
-        "ram": {
-          "recommended": 4096,
-          "minimum": 2048
-        }
-      },
       "modules": [
         {
-          "id": "net.fabricmc:fabric-loader:0.16.14",
-          "name": "Fabric Loader 0.16.14",
-          "type": "Fabric",
-          "artifact": {
-            "size": 1196222,
-            "MD5": "a43d5a142246801343b6cedef1c102c4",
-            "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.16.14/fabric-loader-0.16.14.jar"
-          },
-          "subModules": [
-            {
-              "id": "1.21.1-fabric-0.16.14",
-              "name": "Fabric (version.json)",
-              "type": "VersionManifest",
-              "artifact": {
-                "size": 2847,
-                "MD5": "69a2bd43452325ba1bc882fa0904e054",
-                "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.16.14/fabric-loader-0.16.14.json"
-              }
-            },
-            {
-              "id": "net.fabricmc:intermediary:1.21.1",
-              "name": "Fabric Intermediary Mappings",
-              "type": "Library",
-              "artifact": {
-                "size": 12048,
-                "MD5": "b5c2f0e8c8e9d4c3e6f8a9b2d1c4e7f0",
-                "url": "https://maven.fabricmc.net/net/fabricmc/intermediary/1.21.1/intermediary-1.21.1.jar"
-              }
-            },
-            {
-              "id": "org.ow2.asm:asm:9.8",
-              "name": "ASM Core",
-              "type": "Library",
-              "artifact": {
-                "size": 202066,
-                "MD5": "f5adf3bfc54fb3d2cd8e3a1f275084bc",
-                "url": "https://maven.fabricmc.net/org/ow2/asm/asm/9.8/asm-9.8.jar"
-              }
-            },
-            {
-              "id": "net.fabricmc:sponge-mixin:0.15.4+mixin.0.8.7",
-              "name": "Sponge Mixin",
-              "type": "Library",
-              "artifact": {
-                "size": 1494834,
-                "MD5": "991ca8be2c408fe19eb64014d8a18243",
-                "url": "https://maven.fabricmc.net/net/fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/sponge-mixin-0.15.4+mixin.0.8.7.jar"
-              }
-            }
-          ]
-        },
-        {
-          "id": "net.fabricmc:fabric-api:0.109.0+1.21.1",
-          "name": "Fabric API",
-          "type": "FabricMod",
-          "required": {
-            "value": true,
-            "def": true
-          },
-          "artifact": {
-            "size": 2856341,
-            "MD5": "c5e6f8a9b2d1c4e7f0e3d8c7b4a1f2e9",
-            "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/fabric-api-0.109.0+1.21.1.jar"
-          }
-        },
-        {
-          "id": "com.terraformersmc:modmenu:11.0.3",
-          "name": "Mod Menu",
-          "type": "FabricMod",
-          "required": {
-            "value": false,
-            "def": true
-          },
-          "artifact": {
-            "size": 431256,
-            "MD5": "d8c7b4a1f2e9c5e6f8a9b2d1c4e7f0e3",
-            "url": "https://cdn.modrinth.com/data/mOgUt4GM/versions/modmenu-11.0.3.jar"
-          }
-        },
-        {
-          "id": "me.shedaniel:rei:16.0.788",
-          "name": "Roughly Enough Items (REI)",
-          "type": "FabricMod",
-          "required": {
-            "value": false,
-            "def": false
-          },
-          "artifact": {
-            "size": 1856234,
-            "MD5": "e7f0e3d8c7b4a1f2e9c5e6f8a9b2d1c4",
-            "url": "https://cdn.modrinth.com/data/nfn13YXA/versions/rei-16.0.788-fabric.jar"
-          }
-        },
-        {
-          "id": "net.fabricmc.fabric-language-kotlin:1.12.3+kotlin.2.0.21",
-          "name": "Fabric Language Kotlin",
-          "type": "FabricMod",
-          "required": {
-            "value": false,
-            "def": false
-          },
-          "artifact": {
-            "size": 14562341,
-            "MD5": "f2e9c5e6f8a9b2d1c4e7f0e3d8c7b4a1",
-            "url": "https://maven.fabricmc.net/net/fabricmc/fabric-language-kotlin/1.12.3+kotlin.2.0.21/fabric-language-kotlin-1.12.3+kotlin.2.0.21.jar"
-          }
-        },
-        {
-          "id": "com.github.astei:lazydfu:0.1.3",
-          "name": "LazyDFU",
-          "type": "FabricMod",
-          "required": {
-            "value": false,
-            "def": true
-          },
-          "artifact": {
-            "size": 17632,
-            "MD5": "a1f2e9c5e6f8a9b2d1c4e7f0e3d8c7b4",
-            "url": "https://cdn.modrinth.com/data/hvFnDODi/versions/lazydfu-0.1.3.jar"
-          }
-        },
-        {
-          "id": "net.minecraft:client:1.21.1",
-          "name": "Minecraft Client",
+          "id": "net.fabricmc:fabric-loader:0.16.9",
+          "name": "Fabric Loader",
           "type": "Library",
+          "classpath": true,
           "artifact": {
-            "size": 25634789,
-            "MD5": "8c7b4a1f2e9c5e6f8a9b2d1c4e7f0e3d",
-            "url": "https://libraries.minecraft.net/net/minecraft/client/1.21.1/client-1.21.1.jar"
+            "size": 1300000,
+            "MD5": "placeholder_md5",
+            "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.16.9/fabric-loader-0.16.9.jar"
           }
         },
         {
-          "id": "optifine:OptiFine:1.21.1_HD_U_I7",
-          "name": "OptiFine HD U I7",
+          "id": "fabric-api-0.116.3+1.21.1",
+          "name": "Fabric API 0.116.3+1.21.1",
           "type": "FabricMod",
-          "required": {
-            "value": false,
-            "def": false
-          },
+          "classpath": true,
           "artifact": {
-            "size": 6789234,
-            "MD5": "b2d1c4e7f0e3d8c7b4a1f2e9c5e6f8a9",
-            "url": "https://optifine.net/downloadx?f=OptiFine_1.21.1_HD_U_I7.jar"
-          }
-        },
-        {
-          "id": "com.example:example-config",
-          "name": "Configuration par défaut",
-          "type": "File",
-          "artifact": {
-            "size": 2048,
-            "MD5": "c4e7f0e3d8c7b4a1f2e9c5e6f8a9b2d1",
-            "path": "config/example-mod.json",
-            "url": "https://raw.githubusercontent.com/example/configs/main/fabric-1.21.1/example-mod.json"
-          }
-        },
-        {
-          "id": "com.example:server-icon",
-          "name": "Icône du serveur",
-          "type": "File",
-          "artifact": {
-            "size": 8192,
-            "MD5": "e6f8a9b2d1c4e7f0e3d8c7b4a1f2e9c5",
-            "path": "server-icon.png",
-            "url": "https://raw.githubusercontent.com/example/assets/main/server-icon.png"
-          }
-        },
-        {
-          "id": "com.example:resource-pack",
-          "name": "Pack de ressources personnalisé",
-          "type": "File",
-          "required": {
-            "value": false,
-            "def": true
-          },
-          "artifact": {
-            "size": 15728640,
-            "MD5": "f8a9b2d1c4e7f0e3d8c7b4a1f2e9c5e6",
-            "path": "resourcepacks/custom-pack.zip",
-            "url": "https://github.com/example/resource-packs/releases/download/v1.0.0/custom-pack-1.21.1.zip"
+            "size": 2417666,
+            "MD5": "3691ace93a716e3798a2d5c6fb3053f6",
+            "url": "https://famous-florentine-7204eb.netlify.app/mods/fabric-api-0.116.3+1.21.1.jar"
           }
         }
       ]
     }
   ]
-}
+} 
