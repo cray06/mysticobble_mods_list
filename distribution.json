@@ -181,6 +181,386 @@
           }
         }
       ]
+    },
+    {
+      "id": "Fabric-Demo-1.21.1",
+      "name": "Fabric-Demo (Minecraft 1.21.1)",
+      "description": "Fabric-Demo Running Minecraft 1.21.1 (Fabric v0.15.11)",
+      "icon": "https://helios-files.geekcorner.eu.org/servers/Fabric-Demo-1.21.1/Fabric-Demo-1.21.1.png",
+      "version": "1.0.0",
+      "address": "localhost:25565",
+      "minecraftVersion": "1.21.1",
+      "discord": {
+        "shortId": "Fabric-Demo",
+        "largeImageText": "Fabric-Demo 1.21.1",
+        "largeImageKey": "fabric-demo"
+      },
+      "mainServer": false,
+      "autoconnect": false,
+      "modules": [
+        {
+          "id": "net.fabricmc:fabric-loader:0.15.11",
+          "name": "Fabric (fabric-loader)",
+          "type": "Fabric",
+          "artifact": {
+            "size": 1321135,
+            "MD5": "744dbc7c568d7e782e6616637a14f6b3",
+            "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.15.11/fabric-loader-0.15.11.jar"
+          },
+          "subModules": [
+            {
+              "id": "1.21.1-fabric-0.15.11",
+              "name": "Fabric (version.json)",
+              "type": "VersionManifest",
+              "artifact": {
+                "size": 2847,
+                "MD5": "6052ebb6acbba734c83fd3a09e67d31e",
+                "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.1/0.15.11/profile/json"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm:9.6",
+              "name": "Fabric (asm)",
+              "type": "Library",
+              "artifact": {
+                "size": 123598,
+                "MD5": "6f8bccf756f170d4185bb24c8c2d2020",
+                "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm/9.6/asm-9.6.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-analysis:9.6",
+              "name": "Fabric (asm-analysis)",
+              "type": "Library",
+              "artifact": {
+                "size": 34041,
+                "MD5": "31c84ef7cc893fb278952ae2d6a2674f",
+                "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/9.6/asm-analysis-9.6.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-commons:9.6",
+              "name": "Fabric (asm-commons)",
+              "type": "Library",
+              "artifact": {
+                "size": 72194,
+                "MD5": "9e317c75534bd1da8c00a67c618ab288",
+                "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/9.6/asm-commons-9.6.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-tree:9.6",
+              "name": "Fabric (asm-tree)",
+              "type": "Library",
+              "artifact": {
+                "size": 51935,
+                "MD5": "6062608f1a98afe1e853d01fa1221a9e",
+                "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/9.6/asm-tree-9.6.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-util:9.6",
+              "name": "Fabric (asm-util)",
+              "type": "Library",
+              "artifact": {
+                "size": 91131,
+                "MD5": "bd3bc1c176a787373e9a031073c9574b",
+                "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm-util/9.6/asm-util-9.6.jar"
+              }
+            },
+            {
+              "id": "net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5",
+              "name": "Fabric (sponge-mixin)",
+              "type": "Library",
+              "artifact": {
+                "size": 1451874,
+                "MD5": "4cc3ff559cafdc70d9ed80e869d447f0",
+                "url": "https://maven.fabricmc.net/net/fabricmc/sponge-mixin/0.12.5+mixin.0.8.5/sponge-mixin-0.12.5+mixin.0.8.5.jar"
+              }
+            },
+            {
+              "id": "net.fabricmc:intermediary:1.21.1",
+              "name": "Fabric (intermediary)",
+              "type": "Library",
+              "artifact": {
+                "size": 608319,
+                "MD5": "3a1cade1634c518db6147c9771686ea9",
+                "url": "https://maven.fabricmc.net/net/fabricmc/intermediary/1.21.1/intermediary-1.21.1.jar"
+              }
+            }
+          ]
+        },
+        {
+          "id": "generated.fabricmod:iris:1.7.0@jar",
+          "name": "Iris",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 2416339,
+            "url": "https://helios-files.geekcorner.eu.org/servers/Fabric-Demo-1.21.1/fabricmods/required/iris-mc1.21.1-1.7.0.jar",
+            "MD5": "a2f7578c1652222e8c703831b604150e"
+          }
+        },
+        {
+          "id": "me.jellysquid.mods:lithium:0.12.1@jar",
+          "name": "Lithium",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 716022,
+            "url": "https://helios-files.geekcorner.eu.org/servers/Fabric-Demo-1.21.1/fabricmods/required/lithium-fabric-mc1.21.1-0.12.1.jar",
+            "MD5": "83da6729d5402dc42eca740a96f97346"
+          }
+        },
+        {
+          "id": "com.terraformersmc:modmenu:9.0.0@jar",
+          "name": "Mod Menu",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 724484,
+            "url": "https://helios-files.geekcorner.eu.org/servers/Fabric-Demo-1.21.1/fabricmods/optionalon/modmenu-9.0.0.jar",
+            "MD5": "7eb06d459405ed6c87b16f4c5be4493d"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "me.jellysquid.mods:sodium:0.5.8+mc1.21.1@jar",
+          "name": "Sodium",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 949085,
+            "url": "https://helios-files.geekcorner.eu.org/servers/Fabric-Demo-1.21.1/fabricmods/required/sodium-fabric-0.5.8+mc1.21.1.jar",
+            "MD5": "d7753a50ca37f50abb10465a9a425dac"
+          }
+        },
+        {
+          "id": "generated.library:fabric:api-0.116.3+1.21.1@jar",
+          "name": "fabric",
+          "type": "Library",
+          "artifact": {
+            "size": 2141107,
+            "url": "https://helios-files.geekcorner.eu.org/servers/Fabric-Demo-1.21.1/libraries/fabric-api-0.116.3+1.21.1.jar",
+            "MD5": "e16ba73c962937a8a11515ecfd47d163"
+          }
+        }
+      ]
+    },
+    {
+      "id": "WesterosCraft-Demo-1.21.1",
+      "name": "WesterosCraft-Demo (Minecraft 1.21.1)",
+      "description": "WesterosCraft-Demo Running Minecraft 1.21.1 (Fabric v0.15.11)",
+      "icon": "https://helios-files.geekcorner.eu.org/servers/WesterosCraft-Demo-1.21.1/WesterosCraft-Demo-1.21.1.png",
+      "version": "2.1.6",
+      "address": "mc.westeroscraft.com:25565",
+      "minecraftVersion": "1.21.1",
+      "discord": {
+        "shortId": "WesterosCraft Demo",
+        "largeImageKey": "westeroscraft",
+        "largeImageText": "Change me through Nebula"
+      },
+      "mainServer": false,
+      "autoconnect": false,
+      "modules": [
+        {
+          "id": "net.fabricmc:fabric-loader:0.15.11",
+          "name": "Fabric (fabric-loader)",
+          "type": "Fabric",
+          "artifact": {
+            "size": 1321135,
+            "MD5": "744dbc7c568d7e782e6616637a14f6b3",
+            "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.15.11/fabric-loader-0.15.11.jar"
+          },
+          "subModules": [
+            {
+              "id": "1.21.1-fabric-0.15.11",
+              "name": "Fabric (version.json)",
+              "type": "VersionManifest",
+              "artifact": {
+                "size": 2847,
+                "MD5": "6052ebb6acbba734c83fd3a09e67d31e",
+                "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.1/0.15.11/profile/json"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm:9.6",
+              "name": "Fabric (asm)",
+              "type": "Library",
+              "artifact": {
+                "size": 123598,
+                "MD5": "6f8bccf756f170d4185bb24c8c2d2020",
+                "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm/9.6/asm-9.6.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-analysis:9.6",
+              "name": "Fabric (asm-analysis)",
+              "type": "Library",
+              "artifact": {
+                "size": 34041,
+                "MD5": "31c84ef7cc893fb278952ae2d6a2674f",
+                "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/9.6/asm-analysis-9.6.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-commons:9.6",
+              "name": "Fabric (asm-commons)",
+              "type": "Library",
+              "artifact": {
+                "size": 72194,
+                "MD5": "9e317c75534bd1da8c00a67c618ab288",
+                "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/9.6/asm-commons-9.6.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-tree:9.6",
+              "name": "Fabric (asm-tree)",
+              "type": "Library",
+              "artifact": {
+                "size": 51935,
+                "MD5": "6062608f1a98afe1e853d01fa1221a9e",
+                "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/9.6/asm-tree-9.6.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-util:9.6",
+              "name": "Fabric (asm-util)",
+              "type": "Library",
+              "artifact": {
+                "size": 91131,
+                "MD5": "bd3bc1c176a787373e9a031073c9574b",
+                "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm-util/9.6/asm-util-9.6.jar"
+              }
+            },
+            {
+              "id": "net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5",
+              "name": "Fabric (sponge-mixin)",
+              "type": "Library",
+              "artifact": {
+                "size": 1451874,
+                "MD5": "4cc3ff559cafdc70d9ed80e869d447f0",
+                "url": "https://maven.fabricmc.net/net/fabricmc/sponge-mixin/0.12.5+mixin.0.8.5/sponge-mixin-0.12.5+mixin.0.8.5.jar"
+              }
+            },
+            {
+              "id": "net.fabricmc:intermediary:1.21.1",
+              "name": "Fabric (intermediary)",
+              "type": "Library",
+              "artifact": {
+                "size": 608319,
+                "MD5": "3a1cade1634c518db6147c9771686ea9",
+                "url": "https://maven.fabricmc.net/net/fabricmc/intermediary/1.21.1/intermediary-1.21.1.jar"
+              }
+            }
+          ]
+        },
+        {
+          "id": "generated.fabricmod:iris:1.7.0@jar",
+          "name": "Iris",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 2416339,
+            "url": "https://helios-files.geekcorner.eu.org/servers/WesterosCraft-Demo-1.21.1/fabricmods/required/iris-mc1.21.1-1.7.0.jar",
+            "MD5": "a2f7578c1652222e8c703831b604150e"
+          }
+        },
+        {
+          "id": "me.jellysquid.mods:lithium:0.12.1@jar",
+          "name": "Lithium",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 716022,
+            "url": "https://helios-files.geekcorner.eu.org/servers/WesterosCraft-Demo-1.21.1/fabricmods/required/lithium-fabric-mc1.21.1-0.12.1.jar",
+            "MD5": "83da6729d5402dc42eca740a96f97346"
+          }
+        },
+        {
+          "id": "com.terraformersmc:modmenu:9.0.0@jar",
+          "name": "Mod Menu",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 724484,
+            "url": "https://helios-files.geekcorner.eu.org/servers/WesterosCraft-Demo-1.21.1/fabricmods/optionalon/modmenu-9.0.0.jar",
+            "MD5": "7eb06d459405ed6c87b16f4c5be4493d"
+          },
+          "required": {
+            "value": false
+          }
+        },
+        {
+          "id": "me.jellysquid.mods:sodium:0.5.8+mc1.21.1@jar",
+          "name": "Sodium",
+          "type": "FabricMod",
+          "artifact": {
+            "size": 949085,
+            "url": "https://helios-files.geekcorner.eu.org/servers/WesterosCraft-Demo-1.21.1/fabricmods/required/sodium-fabric-0.5.8+mc1.21.1.jar",
+            "MD5": "d7753a50ca37f50abb10465a9a425dac"
+          }
+        },
+        {
+          "id": "generated.library:fabric:api-0.116.3+1.21.1@jar",
+          "name": "fabric",
+          "type": "Library",
+          "artifact": {
+            "size": 2141107,
+            "url": "https://helios-files.geekcorner.eu.org/servers/WesterosCraft-Demo-1.21.1/libraries/fabric-api-0.116.3+1.21.1.jar",
+            "MD5": "e16ba73c962937a8a11515ecfd47d163"
+          }
+        },
+        {
+          "id": "options.txt",
+          "name": "options.txt",
+          "type": "File",
+          "artifact": {
+            "size": 2788,
+            "url": "https://helios-files.geekcorner.eu.org/servers/WesterosCraft-Demo-1.21.1/files/options.txt",
+            "path": "options.txt"
+          }
+        },
+        {
+          "id": "WesterosCraft-v1.21.1-29.zip",
+          "name": "WesterosCraft-v1.21.1-29.zip",
+          "type": "File",
+          "artifact": {
+            "size": 55905310,
+            "url": "https://helios-files.geekcorner.eu.org/servers/WesterosCraft-Demo-1.21.1/files/resourcepacks/WesterosCraft-v1.21.1-29.zip",
+            "MD5": "eb3c794aafe44c7ea7d3407a10553bd4",
+            "path": "resourcepacks/WesterosCraft-v1.21.1-29.zip"
+          }
+        },
+        {
+          "id": "servers.dat",
+          "name": "servers.dat",
+          "type": "File",
+          "artifact": {
+            "size": 84,
+            "url": "https://helios-files.geekcorner.eu.org/servers/WesterosCraft-Demo-1.21.1/files/servers.dat",
+            "MD5": "71d99e229d7d2b8d2a6423e46832a4b8",
+            "path": "servers.dat"
+          }
+        },
+        {
+          "id": "Chocapic13_V9_Extreme.zip",
+          "name": "Chocapic13_V9_Extreme.zip",
+          "type": "File",
+          "artifact": {
+            "size": 3134623,
+            "url": "https://helios-files.geekcorner.eu.org/servers/WesterosCraft-Demo-1.21.1/files/shaderpacks/Chocapic13_V9_Extreme.zip",
+            "MD5": "2a5ec76ad7acc47005e32cc1e5da1e41",
+            "path": "shaderpacks/Chocapic13_V9_Extreme.zip"
+          }
+        },
+        {
+          "id": "SEUS-Renewed-v1.0.1.zip",
+          "name": "SEUS-Renewed-v1.0.1.zip",
+          "type": "File",
+          "artifact": {
+            "size": 7062638,
+            "url": "https://helios-files.geekcorner.eu.org/servers/WesterosCraft-Demo-1.21.1/files/shaderpacks/SEUS-Renewed-v1.0.1.zip",
+            "MD5": "8faeb04d9953c9b10b0794acafc4c1aa",
+            "path": "shaderpacks/SEUS-Renewed-v1.0.1.zip"
+          }
+        }
+      ]
     }
   ]
 }
