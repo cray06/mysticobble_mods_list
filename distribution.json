@@ -1,0 +1,40 @@
+﻿{
+    "version":  "1.0.0",
+    "servers":  [
+                    {
+                        "mainServer":  true,
+                        "id":  "mysticobble-fabric-1.21.1",
+                        "autoconnect":  true,
+                        "version":  "1.0.0",
+                        "description":  "Serveur MystiCobble Minecraft 1.21.1 avec Fabric",
+                        "icon":  "https://raw.githubusercontent.com/cray06/mysticobble_mods_list/main/assets/server-icon.png",
+                        "name":  "MysticObble Server (Minecraft 1.21.1)",
+                        "address":  "localhost:25565",
+                        "minecraftVersion":  "1.21.1",
+                        "modules":  [
+                                        {
+                                            "artifact":  {
+                                                             "url":  "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.16.9/fabric-loader-0.16.9.jar",
+                                                             "MD5":  "placeholder_md5",
+                                                             "size":  1300000
+                                                         },
+                                            "name":  "Fabric Loader",
+                                            "id":  "net.fabricmc:fabric-loader:0.16.9",
+                                            "type":  "Library",
+                                            "classpath":  true
+                                        },
+                                        {
+                                            "artifact":  {
+                                                             "url":  "https://raw.githubusercontent.com/cray06/mysticobble_mods_list/main/mods/fabric-api-0.116.3+1.21.1.jar",
+                                                             "MD5":  "3691ace93a716e3798a2d5c6fb3053f6",
+                                                             "size":  2417666
+                                                         },
+                                            "name":  "fabric api 0.116.3+1.21.1",
+                                            "id":  "fabric-api-0.116.3+1.21.1",
+                                            "type":  "FabricMod",
+                                            "classpath":  true
+                                        }
+                                    ]
+                    }
+                ]
+}
