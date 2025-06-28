@@ -24,8 +24,8 @@
       "mainServer": true,
       "autoconnect": false,
       "javaOptions": {
-        "supported": ">=17",
-        "suggestedMajor": 17,
+        "supported": ">=21",
+        "suggestedMajor": 21,
         "ram": {
           "recommended": 4096,
           "minimum": 2048
@@ -131,23 +131,23 @@
           }
         },
         {
-          "id": "net.fabricmc:fabric-loader:0.15.0",
-          "name": "Fabric Loader 0.15.0",
+          "id": "net.fabricmc:fabric-loader:0.15.11",
+          "name": "Fabric Loader 0.15.11",
           "type": "Fabric",
           "artifact": {
             "size": 1024000,
             "MD5": "fabricloadermd5hash1234567890abcdef",
-            "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.15.0/fabric-loader-0.15.0.jar"
+            "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.15.11/fabric-loader-0.15.11.jar"
           },
           "subModules": [
             {
-              "id": "1.21.1-fabric-0.15.0",
+              "id": "1.21.1-fabric-0.15.11",
               "name": "Fabric (version.json)",
               "type": "VersionManifest",
               "artifact": {
                 "size": 2847,
                 "MD5": "6052ebb6acbba734c83fd3a09e67d31e",
-                "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.1/0.15.0/profile/json"
+                "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.1/0.15.11/profile/json"
               }
             }
           ]
