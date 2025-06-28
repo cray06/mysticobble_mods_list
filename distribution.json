@@ -120,6 +120,7 @@
             "type": "Fabric",
             "artifact": {
               "size": 1024000,
+              "MD5": "fabricloadermd5hash1234567890abcdef",
               "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.15.11/fabric-loader-0.15.11.jar"
             },
             "subModules": [
