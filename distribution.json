@@ -299,6 +299,36 @@
           ]
         },
         {
+            "id": "MonServeur-1.21.1",
+            "name": "Mon Serveur (Minecraft 1.21.1)",
+            "description": "Mon Serveur personnalisé avec Fabric API",
+            "icon": "https://famous-florentine-7204eb.netlify.app/assets/server-icon.png",
+            "version": "1.0.0",
+            "address": "localhost:25565",
+            "minecraftVersion": "1.21.1",
+            "discord": {
+              "shortId": "1.21.1 MonServeur",
+              "largeImageKey": "https://raw.githubusercontent.com/dscalzi/HeliosLauncher/master/build/icon.png",
+              "largeImageText": "fabric-vanilla"
+            },
+            "mainServer": false,
+            "autoconnect": false,
+            "modules": [
+              {
+                "id": "fabric-api:0.116.3+1.21.1",
+                "name": "Fabric API",
+                "type": "Library",
+                "classpath": true,
+                "artifact": {
+                  "size": null,
+                  "MD5": null,
+                  "url": "https://famous-florentine-7204eb.netlify.app/mods/fabric-api-0.116.3%2B1.21.1.jar"
+                },
+                "subModules": []
+              }
+            ]
+          },
+        {
           "id": "squeek.appleskin:appleskin:2.4.3+mc1.19.4@jar",
           "name": "AppleSkin",
           "type": "ForgeMod",
