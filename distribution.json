@@ -103,6 +103,34 @@
           }
         },
         {
+          "id": "org.spongepowered:mixin:0.8.5",
+          "name": "Mixin 0.8.5",
+          "type": "Library",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 1048576,
+            "MD5": "mixinmd5hash1234567890abcdef123456",
+            "url": "https://repo1.maven.org/maven2/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar"
+          }
+        },
+        {
+          "id": "net.fabricmc:sponge-mixin:0.11.4+mixin.0.8.5",
+          "name": "Fabric Sponge Mixin 0.11.4",
+          "type": "Library",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 2097152,
+            "MD5": "spongemixinmd5hash1234567890abcdef",
+            "url": "https://maven.fabricmc.net/net/fabricmc/sponge-mixin/0.11.4+mixin.0.8.5/sponge-mixin-0.11.4+mixin.0.8.5.jar"
+          }
+        },
+        {
           "id": "net.fabricmc:fabric-loader:0.15.0",
           "name": "Fabric Loader 0.15.0",
           "type": "Fabric",
