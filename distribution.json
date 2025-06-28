@@ -1,172 +1,186 @@
 {
-    "version": "1.0.0",
-  
-    "discord": {
-      "clientId": "12334567890123456789",
-      "smallImageText": "Test Launcher",
-      "smallImageKey": "seal-circle"
-    },
-    "rss": "https://example.com/feed.rss",
-    "servers": [
-      {
-        "id": "Fabric_Server",
-        "name": "Serveur Fabric 1.21.1",
-        "description": "Serveur Minecraft Fabric 1.21.1. Connectez-vous pour jouer !",
-        "icon": "https://famous-florentine-7204eb.netlify.app/assets/server-icon.png",
-        "version": "1.0.0",
-        "address": "localhost:25565",
-        "minecraftVersion": "1.21.1",
-        "discord": {
-          "shortId": "Fabric",
-          "largeImageText": "Serveur Fabric 1.21.1",
-          "largeImageKey": "server-fabric"
-        },
-        "mainServer": true,
-        "autoconnect": false,
-        "javaOptions": {
-          "supported": ">=21",
-          "suggestedMajor": 22,
-          "ram": {
-            "recommended": 4096,
-            "minimum": 2048
+  "version": "1.0.0",
+
+  "discord": {
+    "clientId": "12334567890123456789",
+    "smallImageText": "Test Launcher",
+    "smallImageKey": "seal-circle"
+  },
+  "rss": "https://example.com/feed.rss",
+  "servers": [
+    {
+      "id": "Fabric_Server",
+      "name": "Serveur Fabric 1.21.1",
+      "description": "Serveur Minecraft Fabric 1.21.1. Connectez-vous pour jouer !",
+      "icon": "https://famous-florentine-7204eb.netlify.app/assets/server-icon.png",
+      "version": "1.0.0",
+      "address": "localhost:25565",
+      "minecraftVersion": "1.21.1",
+      "discord": {
+        "shortId": "Fabric",
+        "largeImageText": "Serveur Fabric 1.21.1",
+        "largeImageKey": "server-fabric"
+      },
+      "mainServer": true,
+      "autoconnect": false,
+      "javaOptions": {
+        "supported": ">=21",
+        "suggestedMajor": 21,
+        "ram": {
+          "recommended": 4096,
+          "minimum": 2048
+        }
+      },
+      "modules": [
+        {
+          "id": "org.ow2.asm:asm:9.5",
+          "name": "ASM Core 9.5",
+          "type": "Library",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 121856,
+            "MD5": "9c62730601d41a9b4c1dcb9a47d33d4c",
+            "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm/9.5/asm-9.5.jar"
           }
         },
-        "modules": [
-          {
-            "id": "org.ow2.asm:asm:9.5",
-            "name": "ASM Core 9.5",
-            "type": "Library",
-            "required": {
-              "value": true,
-              "def": true
-            },
-            "artifact": {
-              "size": 121856,
-              "MD5": "9c62730601d41a9b4c1dcb9a47d33d4c",
-              "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm/9.5/asm-9.5.jar"
-            }
+        {
+          "id": "org.ow2.asm:asm-analysis:9.5",
+          "name": "ASM Analysis 9.5",
+          "type": "Library",
+          "required": {
+            "value": true,
+            "def": true
           },
-          {
-            "id": "org.ow2.asm:asm-analysis:9.5",
-            "name": "ASM Analysis 9.5",
-            "type": "Library",
-            "required": {
-              "value": true,
-              "def": true
-            },
-            "artifact": {
-              "size": 33393,
-              "MD5": "4b31dd8e4de7a4291d4b3e7bf4eab5d0",
-              "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/9.5/asm-analysis-9.5.jar"
-            }
+          "artifact": {
+            "size": 33393,
+            "MD5": "4b31dd8e4de7a4291d4b3e7bf4eab5d0",
+            "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm-analysis/9.5/asm-analysis-9.5.jar"
+          }
+        },
+        {
+          "id": "org.ow2.asm:asm-commons:9.5",
+          "name": "ASM Commons 9.5",
+          "type": "Library",
+          "required": {
+            "value": true,
+            "def": true
           },
-          {
-            "id": "org.ow2.asm:asm-commons:9.5",
-            "name": "ASM Commons 9.5",
-            "type": "Library",
-            "required": {
-              "value": true,
-              "def": true
-            },
-            "artifact": {
-              "size": 72675,
-              "MD5": "5a6b29be5a86b7b00b9e2e95f0e5afe4",
-              "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/9.5/asm-commons-9.5.jar"
-            }
+          "artifact": {
+            "size": 72675,
+            "MD5": "5a6b29be5a86b7b00b9e2e95f0e5afe4",
+            "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/9.5/asm-commons-9.5.jar"
+          }
+        },
+        {
+          "id": "org.ow2.asm:asm-tree:9.5",
+          "name": "ASM Tree 9.5",
+          "type": "Library",
+          "required": {
+            "value": true,
+            "def": true
           },
-          {
-            "id": "org.ow2.asm:asm-tree:9.5",
-            "name": "ASM Tree 9.5",
-            "type": "Library",
-            "required": {
-              "value": true,
-              "def": true
-            },
-            "artifact": {
-              "size": 51845,
-              "MD5": "f6d6e7b6b7b6e7b6f6d6e7b6b7b6e7b6",
-              "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/9.5/asm-tree-9.5.jar"
-            }
+          "artifact": {
+            "size": 51845,
+            "MD5": "f6d6e7b6b7b6e7b6f6d6e7b6b7b6e7b6",
+            "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/9.5/asm-tree-9.5.jar"
+          }
+        },
+        {
+          "id": "org.ow2.asm:asm-util:9.5",
+          "name": "ASM Util 9.5",
+          "type": "Library",
+          "required": {
+            "value": true,
+            "def": true
           },
-          {
-            "id": "org.ow2.asm:asm-util:9.5",
-            "name": "ASM Util 9.5",
-            "type": "Library",
-            "required": {
-              "value": true,
-              "def": true
-            },
-            "artifact": {
-              "size": 85199,
-              "MD5": "3e2c796b7b6e7f6e2c796b7b6e7f6e2c",
-              "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm-util/9.5/asm-util-9.5.jar"
-            }
+          "artifact": {
+            "size": 85199,
+            "MD5": "3e2c796b7b6e7f6e2c796b7b6e7f6e2c",
+            "url": "https://repo1.maven.org/maven2/org/ow2/asm/asm-util/9.5/asm-util-9.5.jar"
+          }
+        },
+        {
+          "id": "net.minecraft:launchwrapper:1.12",
+          "name": "Minecraft LaunchWrapper 1.12",
+          "type": "Library",
+          "required": {
+            "value": true,
+            "def": true
           },
-          {
-            "id": "org.spongepowered:mixin:0.12.0",
-            "name": "Mixin 0.12.0",
-            "type": "Library",
-            "required": {
-              "value": true,
-              "def": true
-            },
-            "artifact": {
-              "size": 1048576,
-              "MD5": "mixinmd5hash1234567890abcdef123456",
-              "url": "https://repo.spongepowered.org/maven/org/spongepowered/mixin/0.12.0/mixin-0.12.0.jar"
-            }
+          "artifact": {
+            "size": 32400,
+            "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
+            "url": "https://libraries.minecraft.net/net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar"
+          }
+        },
+        {
+          "id": "org.spongepowered:mixin:0.8.5",
+          "name": "Mixin 0.8.5",
+          "type": "Library",
+          "required": {
+            "value": true,
+            "def": true
           },
-          {
-            "id": "net.fabricmc:sponge-mixin:0.12.0+mixin.0.12.0",
-            "name": "Fabric Sponge Mixin 0.12.0",
-            "type": "Library",
-            "required": {
-              "value": true,
-              "def": true
-            },
-            "artifact": {
-              "size": 2097152,
-              "MD5": "spongemixinmd5hash1234567890abcdef",
-              "url": "https://maven.fabricmc.net/net/fabricmc/sponge-mixin/0.12.0+mixin.0.12.0/sponge-mixin-0.12.0+mixin.0.12.0.jar"
-            }
+          "artifact": {
+            "size": 1048576,
+            "MD5": "mixinmd5hash1234567890abcdef123456",
+            "url": "https://repo.spongepowered.org/maven/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar"
+          }
+        },
+        {
+          "id": "net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5",
+          "name": "Fabric Sponge Mixin 0.12.5",
+          "type": "Library",
+          "required": {
+            "value": true,
+            "def": true
           },
-          {
-            "id": "net.fabricmc:fabric-loader:0.15.11",
-            "name": "Fabric Loader 0.15.11",
-            "type": "Fabric",
-            "artifact": {
-              "size": 1024000,
-              "MD5": "fabricloadermd5hash1234567890abcdef",
-              "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.15.11/fabric-loader-0.15.11.jar"
-            },
-            "subModules": [
-              {
-                "id": "1.21.1-fabric-0.15.11",
-                "name": "Fabric (version.json)",
-                "type": "VersionManifest",
-                "artifact": {
-                  "size": 2847,
-                  "MD5": "6052ebb6acbba734c83fd3a09e67d31e",
-                  "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.1/0.15.11/profile/json"
-                }
+          "artifact": {
+            "size": 2097152,
+            "MD5": "spongemixinmd5hash1234567890abcdef",
+            "url": "https://maven.fabricmc.net/net/fabricmc/sponge-mixin/0.12.5+mixin.0.8.5/sponge-mixin-0.12.5+mixin.0.8.5.jar"
+          }
+        },
+        {
+          "id": "net.fabricmc:fabric-loader:0.15.11",
+          "name": "Fabric Loader 0.15.11",
+          "type": "Fabric",
+          "artifact": {
+            "size": 1024000,
+            "MD5": "fabricloadermd5hash1234567890abcdef",
+            "url": "https://maven.fabricmc.net/net/fabricmc/fabric-loader/0.15.11/fabric-loader-0.15.11.jar"
+          },
+          "subModules": [
+            {
+              "id": "1.21.1-fabric-0.15.11",
+              "name": "Fabric (version.json)",
+              "type": "VersionManifest",
+              "artifact": {
+                "size": 2847,
+                "MD5": "6052ebb6acbba734c83fd3a09e67d31e",
+                "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.1/0.15.11/profile/json"
               }
-            ]
-          },
-          {
-            "id": "net.fabricmc:fabric-api:0.116.3+1.21.1",
-            "name": "Fabric API 0.116.3+1.21.1",
-            "type": "FabricMod",
-            "required": {
-              "value": true,
-              "def": true
-            },
-            "artifact": {
-              "size": 2048000,
-              "MD5": "fabricapimd5hash1234567890abcdef",
-              "url": "https://famous-florentine-7204eb.netlify.app/mods/fabric-api-0.116.3%2B1.21.1.jar"
             }
+          ]
+        },
+        {
+          "id": "net.fabricmc:fabric-api:0.116.3+1.21.1",
+          "name": "Fabric API 0.116.3+1.21.1",
+          "type": "FabricMod",
+          "required": {
+            "value": true,
+            "def": true
+          },
+          "artifact": {
+            "size": 2048000,
+            "MD5": "fabricapimd5hash1234567890abcdef",
+            "url": "https://famous-florentine-7204eb.netlify.app/mods/fabric-api-0.116.3%2B1.21.1.jar"
           }
-        ]
-      }
-    ]
-  }
+        }
+      ]
+    }
+  ]
+}
